@@ -627,7 +627,7 @@ function draw() {
 
     }
 
-    if(health <= 0) return document.location='records.html';
+    if(health <= 0) return document.location='menu.html';
 
     ctx.fillStyle = "#ff0000";
     ctx.fillRect(20, 30, health * 2, 15);
