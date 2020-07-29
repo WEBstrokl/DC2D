@@ -9,21 +9,35 @@
 <body>
     <div class="conteiner">
         <div class="menu">
-            <div class="logo">
-                <h1>DragonBorn</h1>
+            <div id="inputName">
+                <p>
+                    <b>Your name:</b>
+                    <input type="text" size="40" id="name">
+                </p>
+                <button onclick="document.location='index.html'">Continue</button>
             </div>
-            <div class="btn">
-                <div class="start">
-                    <button onclick="document.location='index.html'">Start</button>
+            <div class="main">
+                <div class="logo">
+                    <h1>DragonBorn</h1>
                 </div>
-                <div class="inst">
-                    <button onclick="document.location='inst.html'">Instructions</button>
-                </div>
-                <div class="records">
-                    <button onclick="document.location='records.html'">Records</button>
+                <div class="btn">
+                    <div class="start">
+                        <button id="show">Start</button>
+                    </div>
+                    <div class="inst">
+                        <button onclick="document.location='inst.html'">Instructions</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        let show = document.getElementById("show");
+        let inputName = document.getElementById("inputName");
+
+        show.addEventListener("click", () => {
+            inputName.style.display = "block";
+        })
+    </script>
 </body>
 </html>
